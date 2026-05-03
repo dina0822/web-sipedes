@@ -11,22 +11,3 @@ $nik = $_SESSION['nik'];
 $query = mysqli_query($conn, "SELECT * FROM users WHERE nik='$nik'");
 $user = mysqli_fetch_assoc($query);
 ?>
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Dashboard</title>
-</head>
-<body>
-
-<!-- LOAD HTML -->
-<?php include "dashboard.html"; ?>
-
-<script>
-    // kirim data dari PHP ke HTML
-    document.getElementById("dashboardName").textContent = "<?php echo $user['nama']; ?>";
-    document.getElementById("dashboardNik").textContent = "NIK: <?php echo $user['nik']; ?>";
-</script>
-
-</body>
-</html>
