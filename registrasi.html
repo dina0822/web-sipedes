@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Registrasi</title>
+  <link rel="stylesheet" href="style-registrasi.css">
+</head>
+
+<body>
+
+<div class="card">
+
+  <div class="header">
+    <h2>SiPeDes</h2>
+    <h1>Buat Akun Baru</h1>
+    <p>Daftar hanya butuh NIK</p>
+
+    <div class="step">1 Data Diri & Identitas</div>
+    <div class="step">2 Buat Akun</div>
+  </div>
+
+  <div class="form-box">
+    <h2>Data Diri & Identitas</h2>
+    <p>Langkah 1 dari 2</p>
+
+    <form action="registrasi2.php" method="POST">
+
+      <label>NIK *</label>
+      <input type="text" name="nik" required>
+
+      <label>Nama Lengkap *</label>
+      <input type="text" name="nama_lengkap" required>
+
+      <label>Tempat Lahir</label>
+      <input type="text" name="tempat_lahir">
+
+      <label>Tanggal Lahir</label>
+      <input type="date" name="tanggal_lahir">
+
+      <label>Kelamin</label>
+      <select name="kelamin">
+        <option value="">Pilih</option>
+        <option value="Laki-laki">Laki-laki</option>
+        <option value="Perempuan">Perempuan</option>
+      </select>
+
+      <label>Alamat</label>
+      <input type="text" name="alamat">
+
+      <label>RT</label>
+      <input type="text" name="rt">
+
+      <label>RW</label>
+      <input type="text" name="rw">
+
+      <label>Kelurahan</label>
+      <input type="text" name="kelurahan">
+
+      <div class="agreement">
+        <input type="checkbox" id="setuju" required>
+        <label for="setuju">
+          Saya menyetujui bahwa data yang saya isi adalah benar.
+        </label>
+      </div>
+
+      <button type="submit">Lanjut</button>
+
+    </form>
+  </div>
+
+</div>
+
+</body>
+</html>

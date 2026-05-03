@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Akun Baru</title>
+  <link rel="stylesheet" href="style-registrasi.css">
+</head>
+
+<body>
+
+<div class="card">
+  <div class="header">
+    <h2>SiPeDes</h2>
+    <h1>Akun Baru</h1>
+    <p>Langkah 2 dari 2</p>
+  </div>
+
+  <div class="form-box">
+    <form action="proses-registrasi.php" method="POST" autocomplete="off">
+      <label>Email *</label>
+      <input type="email" name="email_registrasi" placeholder="contoh@email.com" required>
+
+      <label>Password *</label>
+      <input type="password" name="password" required>
+
+      <label>Konfirmasi Password *</label>
+      <input type="password" name="konfirmasi_password" required>
+
+      <div class="agreement">
+        <input type="checkbox" id="setuju2" required>
+        <label for="setuju2">Saya menyetujui syarat & ketentuan</label>
+      </div>
+
+      <button type="submit">Daftar</button>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>

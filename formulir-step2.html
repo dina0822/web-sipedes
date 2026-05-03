@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Step 2 - Dokumen</title>
+  <link rel="stylesheet" href="style-formulir-step2.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h2>Surat Domisili</h2>
+
+  <!-- STEP INDICATOR -->
+  <div class="steps">
+    <div class="step done">1</div>
+    <div class="step active">2</div>
+    <div class="step">3</div>
+  </div>
+
+  <div class="step-label">
+    <span>Keperluan</span>
+    <span>Dokumen</span>
+    <span>Konfirmasi</span>
+  </div>
+
+  <div class="info">
+    Format JPG, PNG, atau PDF Maksimal 2 MB per file.
+  </div>
+
+  <!-- FORM UPLOAD -->
+  <form action="step3.php" method="POST" enctype="multipart/form-data">
+
+    <div class="upload-group">
+      <label>Foto KTP *</label>
+      <input type="file" name="ktp" required>
+    </div>
+
+    <div class="upload-group">
+      <label>Kartu Keluarga *</label>
+      <input type="file" name="kk" required>
+    </div>
+
+    <div class="upload-group">
+      <label>Surat RT/RW</label>
+      <input type="file" name="surat_rt">
+    </div>
+
+    <div class="upload-group">
+      <label>Dokumen Lain (opsional)</label>
+      <input type="file" name="lain">
+    </div>
+
+    <!-- BUTTON -->
+    <div class="button-group">
+      <a href="step1.php" class="back">← Kembali</a>
+      <button type="submit" class="next">Lanjut →</button>
+    </div>
+
+  </form>
+
+</div>
+
+</body>
+</html>
